@@ -18,4 +18,16 @@
     <string name="description_login">login</string>
     <string name="menu_activity_tracker">Активность</string>
     <string name="menu_profile">Профиль</string>
+    <string name="description_fab">fab</string>
+    <string name="text_distance">Distance</string>
+    <string name="text_date">Date</string>
+    <string name="text_duration">Duration</string>
+    <string name="text_start">Старт</string>
+    <string name="text_time">time</string>
+    <string name="vertical_separator_line">|</string>
+    <string name="text_finish">Финиш</string>
+    <string name="text_comment">Комментарий</string>
+    <string name="text_activity_type">Activity type</string>
+    <string name="text_user">User</string>
+    <string name="text_profile_fragment">Profile Fragment</string>
 </resources>

@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import ru.fefu.activitytracker.databinding.ActivityFragmentTrackingBinding
 
-
 class ActivityTrackerFragment : Fragment() {
     private var _binding: ActivityFragmentTrackingBinding? = null
 
