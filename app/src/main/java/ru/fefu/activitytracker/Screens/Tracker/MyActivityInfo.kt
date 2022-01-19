@@ -1,4 +1,4 @@
-package ru.fefu.activitytracker
+package ru.fefu.activitytracker.Screens.Tracker
 
 import android.os.Bundle
 import android.view.LayoutInflater

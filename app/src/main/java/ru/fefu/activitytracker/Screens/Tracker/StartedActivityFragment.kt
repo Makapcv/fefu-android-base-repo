@@ -1,21 +1,21 @@
-package ru.fefu.activitytracker
+package ru.fefu.activitytracker.Screens.Tracker
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import ru.fefu.activitytracker.databinding.UserActivityDetailsBinding
+import ru.fefu.activitytracker.databinding.StartedActivityFragmentBinding
 
-class UserActivityInfo: Fragment() {
-    private var _binding: UserActivityDetailsBinding? = null
+class StartedActivityFragment: Fragment() {
+    private var _binding: StartedActivityFragmentBinding? = null
     private val binding get() = _binding!!
 
     companion object {
-        fun newInstance(): UserActivityInfo {
-            return UserActivityInfo()
+        fun newInstance(): StartedActivityFragment {
+            return StartedActivityFragment()
         }
-        const val tag = "user_info"
+        const val tag = "started_activity"
     }
 
     override fun onCreateView(
@@ -23,14 +23,13 @@ class UserActivityInfo: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = UserActivityDetailsBinding.inflate(inflater, container, false)
+        _binding = StartedActivityFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.toolbar.setNavigationOnClickListener {
+        binding.backButton.setOnClickListener {
             activity?.onBackPressed()
         }
     }
