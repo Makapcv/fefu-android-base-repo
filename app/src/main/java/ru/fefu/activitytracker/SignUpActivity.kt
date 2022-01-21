@@ -34,7 +34,7 @@ class SignUpActivity : Activity() {
         val backButton : ImageView = findViewById(R.id.backButton)
         backButton.setOnClickListener {
             val intent = Intent(this@SignUpActivity, WelcomeActivity::class.java)
-            startActivity(intent)
+            finish()
         }
 
         val text = SpannableString("Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение ")
