@@ -16,4 +16,6 @@
     <string name="description_welcome_logo">welcome_logo</string>
     <string name="description_logo_text">logo_text</string>
     <string name="description_login">login</string>
+    <string name="menu_activity_tracker">Активность</string>
+    <string name="menu_profile">Профиль</string>
 </resources>
