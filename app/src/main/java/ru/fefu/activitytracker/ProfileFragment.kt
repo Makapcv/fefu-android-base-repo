@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import ru.fefu.activitytracker.databinding.ActivityFragmentProfileBinding
 
-
 class ProfileFragment : Fragment() {
     private var _binding: ActivityFragmentProfileBinding? = null
 
