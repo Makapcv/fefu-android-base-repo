@@ -1,4 +1,4 @@
-package ru.fefu.activitytracker
+package ru.fefu.activitytracker.Screens
 
 import android.app.Activity
 import android.content.Intent
@@ -13,6 +13,7 @@ import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import ru.fefu.activitytracker.R
 
 class SignUpActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,11 +37,9 @@ class SignUpActivity : Activity() {
             val intent = Intent(this@SignUpActivity, WelcomeActivity::class.java)
             startActivity(intent)
         }
-
         val text = SpannableString("Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение ")
         text.setSpan(MyClickableSpan(), 37, 66, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         text.setSpan(MyClickableSpan(), 118, 145, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-
         val confirmText : TextView = findViewById(R.id.textConfirm)
         confirmText.text = text
         confirmText.setMovementMethod(LinkMovementMethod.getInstance());
