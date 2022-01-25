@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import ru.fefu.activitytracker.R
+import ru.fefu.activitytracker.Screens.Tracker.Profile.ProfileFragment
 import ru.fefu.activitytracker.databinding.ActivityLayoutBinding
 
 data class FragmentInfo (

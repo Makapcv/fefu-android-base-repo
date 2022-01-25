@@ -45,4 +45,6 @@
     <string name="text_activity">Activity</string>
     <string name="description_finish_button">finish_button</string>
     <string name="description_pause_button">pause_button</string>
+    <string name="text_menu_men">Мужской</string>
+    <string name="text_menu_women">Женский</string>
 </resources>
