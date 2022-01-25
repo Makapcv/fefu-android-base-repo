@@ -40,6 +40,7 @@ class ActivityMyTrackerFragment : Fragment(R.layout.activity_fragment_tracking_m
     private val binding get() = _binding!!
     private val activities = mutableListOf<ActivityData>()
     private val data_activities = mutableListOf<Any>()
+    private val adapter = ActivityListAdapter(data_activities)
 
     val map = mapOf(1 to "Январь", 2 to "Февраль", 3 to "Март",
         4 to "Апрель", 5 to "Май", 6 to "Июнь",
@@ -207,8 +208,6 @@ class ActivityMyTrackerFragment : Fragment(R.layout.activity_fragment_tracking_m
         }
     }
 
-    private val adapter = ActivityListAdapter(data_activities)
-
     private fun changeFragment(position: Int) {
         if (position in data_activities.indices) {
             val manager = activity?.supportFragmentManager?.findFragmentByTag(ActivityTabs.tag)?.childFragmentManager
@@ -227,7 +226,6 @@ class ActivityMyTrackerFragment : Fragment(R.layout.activity_fragment_tracking_m
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         App.INSTANCE.db.activityDao().getAll().observe(viewLifecycleOwner) {
             activities.clear()
             data_activities.clear()
